@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OfficinaSma - Gestione Officina Intelligente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-tools me-2"></i>OfficinaSma
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Funzionalità</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Prezzi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contatti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light ms-2" href="#demo">Prova Gratuita</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-white mb-4">
+                        Gestione Officina <span class="text-warning">Intelligente</span>
+                    </h1>
+                    <p class="lead text-white-50 mb-4">
+                        Trasforma la tua officina con la nostra soluzione completa di gestione. 
+                        Appuntamenti, clienti, veicoli e fatturazione tutto in un'unica piattaforma.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#demo" class="btn btn-warning btn-lg">
+                            <i class="fas fa-play me-2"></i>Prova Gratuita
+                        </a>
+                        <a href="#features" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-info-circle me-2"></i>Scopri di Più
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Officina Moderna" class="img-fluid rounded-3 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Funzionalità Principali</h2>
+                <p class="lead text-muted">Tutto quello che serve per gestire la tua officina in modo efficiente</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-calendar-check fa-3x text-primary"></i>
+                        </div>
+                        <h4>Gestione Appuntamenti</h4>
+                        <p class="text-muted">
+                            Sistema di prenotazione intelligente con calendario integrato, 
+                            gestione conflitti e notifiche automatiche.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-users fa-3x text-success"></i>
+                        </div>
+                        <h4>Database Clienti</h4>
+                        <p class="text-muted">
+                            Gestione completa dei clienti con storico veicoli, 
+                            preferenze e cronologia interventi.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-car fa-3x text-info"></i>
+                        </div>
+                        <h4>Gestione Veicoli</h4>
+                        <p class="text-muted">
+                            Database veicoli con specifiche tecniche, 
+                            storico manutenzioni e documentazione.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-receipt fa-3x text-warning"></i>
+                        </div>
+                        <h4>Fatturazione</h4>
+                        <p class="text-muted">
+                            Generazione automatica fatture, gestione pagamenti 
+                            e report finanziari dettagliati.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-chart-line fa-3x text-danger"></i>
+                        </div>
+                        <h4>Analytics & Report</h4>
+                        <p class="text-muted">
+                            Dashboard con statistiche in tempo reale, 
+                            report di produttività e previsioni.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-mobile-alt fa-3x text-secondary"></i>
+                        </div>
+                        <h4>App Mobile</h4>
+                        <p class="text-muted">
+                            Accesso completo da smartphone e tablet, 
+                            notifiche push e sincronizzazione cloud.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Piano di Abbonamento</h2>
+                <p class="lead text-muted">Scegli il piano perfetto per la tua officina</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="pricing-card text-center p-5 bg-white rounded-3 shadow">
+                        <div class="pricing-header mb-4">
+                            <h3 class="text-primary fw-bold">OfficinaSma Pro</h3>
+                            <div class="price-display">
+                                <span class="display-4 fw-bold text-primary">€100</span>
+                                <span class="text-muted">/mese</span>
+                            </div>
+                            <p class="text-muted">Nessun costo di setup • Cancellazione gratuita</p>
+                        </div>
+                        
+                        <div class="pricing-features mb-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    Gestione illimitata appuntamenti
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    Database clienti e veicoli
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    Sistema di fatturazione completo
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    Dashboard analytics avanzata
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    App mobile inclusa
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    Supporto tecnico 24/7
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    Backup automatico cloud
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-check text-success me-2"></i>
+                                    Aggiornamenti gratuiti
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <a href="#contact" class="btn btn-primary btn-lg">
+                            <i class="fas fa-rocket me-2"></i>Inizia Ora
+                        </a>
+                        
+                        <p class="text-muted mt-3 small">
+                            Prova gratuita di 14 giorni • Nessun impegno
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-6 fw-bold mb-4">Prova la Demo</h2>
+                    <p class="lead text-muted mb-4">
+                        Scopri come OfficinaSma può rivoluzionare la gestione della tua officina. 
+                        Prova gratuitamente per 14 giorni senza impegno.
+                    </p>
+                    <div class="demo-features">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-clock text-primary me-3 fa-lg"></i>
+                            <span>Setup in meno di 5 minuti</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-shield-alt text-success me-3 fa-lg"></i>
+                            <span>Dati sicuri e protetti</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-headset text-info me-3 fa-lg"></i>
+                            <span>Supporto tecnico incluso</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary btn-lg mt-3">
+                        <i class="fas fa-play me-2"></i>Avvia Demo
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="demo-screenshot">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Screenshot Dashboard" class="img-fluid rounded-3 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Contattaci</h2>
+                <p class="lead">Pronto a trasformare la tua officina?</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="contact-info">
+                                <h4 class="mb-4">Informazioni di Contatto</h4>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-envelope text-primary me-3"></i>
+                                    <span>info@officinasma.it</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-phone text-primary me-3"></i>
+                                    <span>+39 02 1234 5678</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                    <span>Milano, Italia</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-clock text-primary me-3"></i>
+                                    <span>Lun-Ven: 9:00-18:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <form class="contact-form">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Nome e Cognome" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" placeholder="Telefono">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Nome Officina">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="4" placeholder="Messaggio"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <i class="fas fa-paper-plane me-2"></i>Invia Richiesta
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 OfficinaSma. Tutti i diritti riservati.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

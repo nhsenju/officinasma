@@ -1,0 +1,89 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15
+    container_name: smart-garage-postgres
+    environment:
+      POSTGRES_DB: smartgarage
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password123
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend/init_database.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5433:5432"
+    networks:
+      - smart-garage-network
+    restart: unless-stopped
+
+  # Redis for caching
+  redis:
+    image: redis:7-alpine
+    container_name: smart-garage-redis
+    ports:
+      - "6380:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - smart-garage-network
+    restart: unless-stopped
+
+  # Backend API
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: smart-garage-backend
+    environment:
+      - DATABASE_URL=postgresql://admin:password123@postgres:5432/smartgarage
+      - REDIS_URL=redis://redis:6379
+      - SECRET_KEY=your-secret-key-change-in-production
+      - SENDGRID_API_KEY=${SENDGRID_API_KEY}
+      - TWILIO_ACCOUNT_SID=${TWILIO_ACCOUNT_SID}
+      - TWILIO_AUTH_TOKEN=${TWILIO_AUTH_TOKEN}
+      - TWILIO_PHONE_NUMBER=${TWILIO_PHONE_NUMBER}
+      - CAMERA_URL=${CAMERA_URL}
+    volumes:
+      - ./backend:/app
+      - uploads_storage:/app/uploads
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - smart-garage-network
+    restart: unless-stopped
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  # Frontend React App
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: smart-garage-frontend
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000/api/v1
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - "3001:3000"
+    depends_on:
+      - backend
+    networks:
+      - smart-garage-network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:
+  uploads_storage:
+
+networks:
+  smart-garage-network:
+    driver: bridge

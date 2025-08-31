@@ -1,0 +1,520 @@
+===============================================================================
+                        MANUALE UTENTE MECCANICO
+                           OFFICINA SMA PORTAL
+===============================================================================
+
+INDICE
+-------
+1. INTRODUZIONE
+2. ACCESSO AL SISTEMA
+3. DASHBOARD PRINCIPALE
+4. GESTIONE CLIENTI
+5. GESTIONE VEICOLI
+6. GESTIONE APPUNTAMENTI
+7. MONITORAGGIO LIVESTREAM AI
+8. IMPOSTAZIONI
+9. FUNZIONI AVANZATE
+10. RISOLUZIONE PROBLEMI
+11. GLOSSARIO
+
+===============================================================================
+1. INTRODUZIONE
+===============================================================================
+
+Benvenuto nel portale OfficinaSma! Questo sistema è progettato per gestire 
+tutte le operazioni quotidiane dell'officina meccanica, dalla gestione dei 
+clienti al monitoraggio automatico delle targhe.
+
+RUOLO MECCANICO:
+- Visualizzare e gestire appuntamenti
+- Monitorare il livestream per riconoscimento targhe
+- Consultare informazioni su clienti e veicoli
+- Aggiornare lo stato dei lavori
+
+===============================================================================
+2. ACCESSO AL SISTEMA
+===============================================================================
+
+PASSO 1: APRIRE IL BROWSER
+- Apri il tuo browser web (Chrome, Firefox, Safari, Edge)
+- Vai all'indirizzo: http://localhost:3000
+
+PASSO 2: EFFETTUARE IL LOGIN
+- Inserisci il tuo indirizzo email
+- Inserisci la tua password
+- Clicca su "Accedi"
+
+CREDENZIALI DI DEFAULT:
+Email: mechanic@officinasma.com
+Password: mechanic123
+
+NOTA: Cambia la password al primo accesso per sicurezza.
+
+===============================================================================
+3. DASHBOARD PRINCIPALE
+===============================================================================
+
+La dashboard è la pagina principale che si apre dopo il login.
+
+ELEMENTI PRINCIPALI:
+┌─────────────────────────────────────────────────────────────┐
+│ [LOGO] OFFICINA SMA                    [UTENTE] [LOGOUT]    │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐         │
+│  │   CLIENTI   │  │   VEICOLI   │  │APPUNTAMENTI │         │
+│  │     25      │  │     42      │  │     8       │         │
+│  └─────────────┘  └─────────────┘  └─────────────┘         │
+│                                                             │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐         │
+│  │   OGGI      │  │   SETTIMANA │  │   MESE      │         │
+│  │     3       │  │     12      │  │     45      │         │
+│  └─────────────┘  └─────────────┘  └─────────────┘         │
+│                                                             │
+│  ATTIVITÀ RECENTI:                                          │
+│  • 14:30 - Appuntamento confermato: Mario Rossi (Fiat Panda)│
+│  • 13:15 - Nuovo veicolo registrato: AB123CD               │
+│  • 12:00 - Cliente arrivato: Targa EF456GH rilevata        │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+
+AZIONI RAPIDE:
+- Clicca su "Appuntamenti" per vedere tutti gli appuntamenti
+- Clicca su "Livestream AI" per monitorare le targhe
+- Clicca su "Clienti" per gestire i clienti
+
+===============================================================================
+4. GESTIONE CLIENTI
+===============================================================================
+
+ACCESSO: Menu laterale → "Clienti"
+
+FUNZIONI DISPONIBILI:
+┌─────────────────────────────────────────────────────────────┐
+│ GESTIONE CLIENTI                    [+ NUOVO CLIENTE]       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  FILTRI: [Cerca...] [Stato: Tutti ▼] [Ordina: Nome ▼]      │
+│                                                             │
+│  ┌─────────────────────────────────────────────────────────┐ │
+│  │ Mario Rossi                    mario.rossi@email.com   │ │
+│  │ +39 333 1234567                Via Roma 123, Milano    │ │
+│  │ [MODIFICA] [VEICOLI] [APPUNTAMENTI] [ELIMINA]          │ │
+│  └─────────────────────────────────────────────────────────┘ │
+│                                                             │
+│  ┌─────────────────────────────────────────────────────────┐ │
+│  │ Anna Bianchi                  anna.bianchi@email.com   │ │
+│  │ +39 333 9876543                Via Milano 456, Roma    │ │
+│  │ [MODIFICA] [VEICOLI] [APPUNTAMENTI] [ELIMINA]          │ │
+│  └─────────────────────────────────────────────────────────┘ │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+
+CREARE UN NUOVO CLIENTE:
+1. Clicca su "+ NUOVO CLIENTE"
+2. Compila i campi:
+   - Nome completo (obbligatorio)
+   - Email (obbligatorio)
+   - Telefono (obbligatorio)
+   - Indirizzo (opzionale)
+   - Note (opzionale)
+3. Clicca "Salva"
+
+MODIFICARE UN CLIENTE:
+1. Clicca su "MODIFICA" accanto al cliente
+2. Modifica i campi necessari
+3. Clicca "Aggiorna"
+
+GESTIRE VEICOLI DI UN CLIENTE:
+1. Clicca su "VEICOLI" accanto al cliente
+2. Vedi tutti i veicoli associati
+3. Puoi aggiungere nuovi veicoli
+
+GESTIRE APPUNTAMENTI DI UN CLIENTE:
+1. Clicca su "APPUNTAMENTI" accanto al cliente
+2. Vedi tutti gli appuntamenti del cliente
+3. Puoi creare nuovi appuntamenti
+
+===============================================================================
+5. GESTIONE VEICOLI
+===============================================================================
+
+ACCESSO: Menu laterale → "Veicoli"
+
+FUNZIONI DISPONIBILI:
+┌─────────────────────────────────────────────────────────────┐
+│ GESTIONE VEICOLI                      [+ NUOVO VEICOLO]     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  FILTRI: [Cerca...] [Cliente: Tutti ▼] [Carburante: Tutti ▼]│
+│                                                             │
+│  ┌─────────────────────────────────────────────────────────┐ │
+│  │ AB123CD - Fiat Panda 2020 - Bianco - Benzina           │ │
+│  │ Cliente: Mario Rossi                                    │ │
+│  │ [MODIFICA] [APPUNTAMENTI] [ELIMINA]                    │ │
+│  └─────────────────────────────────────────────────────────┘ │
+│                                                             │
+│  ┌─────────────────────────────────────────────────────────┐ │
+│  │ EF456GH - Ford Focus 2019 - Rosso - Diesel              │ │
+│  │ Cliente: Anna Bianchi                                   │ │
+│  │ [MODIFICA] [APPUNTAMENTI] [ELIMINA]                    │ │
+│  └─────────────────────────────────────────────────────────┘ │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+
+CREARE UN NUOVO VEICOLO:
+1. Clicca su "+ NUOVO VEICOLO"
+2. Compila i campi:
+   - Targa (obbligatorio, formato italiano: AA123AA)
+   - Marca (obbligatorio)
+   - Modello (obbligatorio)
+   - Anno (obbligatorio)
+   - Colore (obbligatorio)
+   - Cliente (obbligatorio, seleziona dal menu)
+   - VIN (opzionale)
+   - Cilindrata (opzionale)
+   - Tipo carburante (opzionale)
+3. Clicca "Salva"
+
+MODIFICARE UN VEICOLO:
+1. Clicca su "MODIFICA" accanto al veicolo
+2. Modifica i campi necessari
+3. Clicca "Aggiorna"
+
+GESTIRE APPUNTAMENTI DI UN VEICOLO:
+1. Clicca su "APPUNTAMENTI" accanto al veicolo
+2. Vedi tutti gli appuntamenti del veicolo
+3. Puoi creare nuovi appuntamenti
+
+===============================================================================
+6. GESTIONE APPUNTAMENTI
+===============================================================================
+
+ACCESSO: Menu laterale → "Appuntamenti"
+
+FUNZIONI DISPONIBILI:
+┌─────────────────────────────────────────────────────────────┐
+│ GESTIONE APPUNTAMENTI                [+ NUOVO APPUNTAMENTO] │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  FILTRI: [Stato: Tutti ▼] [Data: 27/08/2024 📅] [RESET]   │
+│                                                             │
+│  ┌─────────────────────────────────────────────────────────┐ │
+│  │ 14:30 - Mario Rossi - Fiat Panda (AB123CD)             │ │
+│  │ Cambio olio - 60 min - Confermato                       │ │
+│  │ [MODIFICA] [INIZIA LAVORO] [COMPLETA] [CANCELLA]       │ │
+│  └─────────────────────────────────────────────────────────┘ │
+│                                                             │
+│  ┌─────────────────────────────────────────────────────────┐ │
+│  │ 16:00 - Anna Bianchi - Ford Focus (EF456GH)            │ │
+│  │ Revisione - 120 min - Programmato                      │ │
+│  │ [MODIFICA] [INIZIA LAVORO] [COMPLETA] [CANCELLA]       │ │
+│  └─────────────────────────────────────────────────────────┘ │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+
+STATI APPUNTAMENTO:
+• PROGRAMMATO: Appuntamento creato ma non confermato
+• CONFERMATO: Cliente ha confermato l'appuntamento
+• IN CORSO: Lavoro iniziato
+• COMPLETATO: Lavoro finito
+• CANCELLATO: Appuntamento annullato
+
+CREARE UN NUOVO APPUNTAMENTO:
+1. Clicca su "+ NUOVO APPUNTAMENTO"
+2. Seleziona il cliente (se non esiste, crealo prima)
+3. Seleziona il veicolo (se non esiste, crealo prima)
+4. Seleziona il servizio
+5. Imposta data e ora
+6. Inserisci la durata stimata (in minuti)
+7. Aggiungi note se necessario
+8. Clicca "Salva"
+
+GESTIRE UN APPUNTAMENTO:
+• MODIFICA: Cambia dettagli dell'appuntamento
+• INIZIA LAVORO: Cambia stato da "Confermato" a "In corso"
+• COMPLETA: Cambia stato da "In corso" a "Completato"
+• CANCELLA: Annulla l'appuntamento
+
+FILTRI UTILI:
+• Stato: Filtra per stato dell'appuntamento
+• Data: Filtra per data specifica
+• Reset: Rimuove tutti i filtri
+
+===============================================================================
+7. MONITORAGGIO LIVESTREAM AI
+===============================================================================
+
+ACCESSO: Menu laterale → "Livestream AI"
+
+Questa è una funzionalità avanzata che monitora automaticamente le targhe 
+dei veicoli che entrano nell'officina.
+
+INTERFACCIA PRINCIPALE:
+┌─────────────────────────────────────────────────────────────┐
+│ MONITORAGGIO LIVESTREAM AI                                  │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  CONFIGURAZIONE STREAM:                                     │
+│  ┌─────────────────────────────────────────────────────────┐ │
+│  │ URL Stream Input: [0________________] [AVVIA] [FERMA]  │ │
+│  │ URL Stream Output: [output.avi_______] (opzionale)     │ │
+│  │                                                         │ │
+│  │ [🟢 Monitoraggio Attivo] [📷 Blur Facce e Targhe]     │ │
+│  └─────────────────────────────────────────────────────────┘ │
+│                                                             │
+│  TAB: [Rilevazioni Recenti] [Immagini Targhe] [Ricerca]   │
+│                                                             │
+│  ┌─────────────────────────────────────────────────────────┐ │
+│  │ RILEVAZIONI RECENTI:                                    │ │
+│  │ • 14:25 - AB123CD - Mario Rossi - Appuntamento trovato │ │
+│  │ • 13:45 - EF456GH - Anna Bianchi - Veicolo registrato  │ │
+│  │ • 12:30 - IJ789KL - Targa non trovata                  │ │
+│  └─────────────────────────────────────────────────────────┘ │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+
+CONFIGURAZIONE STREAM:
+
+1. AVVIARE IL MONITORAGGIO:
+   - Inserisci l'URL dello stream:
+     • 0 = webcam locale
+     • rtsp://192.168.1.100:554/stream1 = IP camera
+     • http://192.168.1.100:8080/video = stream HTTP
+   - Clicca "AVVIA MONITORAGGIO"
+
+2. CONFIGURAZIONE OUTPUT (opzionale):
+   - Inserisci un nome file per salvare il video con blur
+   - Esempio: output.avi, garage_monitoring.mp4
+
+3. FERMARE IL MONITORAGGIO:
+   - Clicca "FERMA MONITORAGGIO"
+
+TAB DISPONIBILI:
+
+TAB 1: RILEVAZIONI RECENTI
+- Lista delle targhe rilevate in tempo reale
+- Informazioni su veicolo e cliente
+- Stato degli appuntamenti
+- Timestamp della rilevazione
+
+TAB 2: IMMAGINI TARGHE
+- Galleria delle foto delle targhe salvate
+- Visualizzazione a griglia con timestamp
+- Possibilità di eliminare le immagini
+- Visualizzazione ingrandita
+
+TAB 3: RICERCA MANUALE
+- Ricerca manuale di una targa specifica
+- Risultati dettagliati con informazioni complete
+
+ESEMPI DI CONFIGURAZIONE STREAM:
+
+Webcam locale:
+```
+URL Stream Input: 0
+URL Stream Output: test_webcam.avi
+```
+
+IP Camera Hikvision:
+```
+URL Stream Input: rtsp://admin:password@192.168.1.100:554/stream1
+URL Stream Output: garage_monitoring.avi
+```
+
+Stream HTTP:
+```
+URL Stream Input: http://192.168.1.100:8080/video
+URL Stream Output: parking_lot.mp4
+```
+
+FUNZIONI DI PRIVACY:
+• Blur automatico delle facce rilevate
+• Blur automatico delle targhe rilevate
+• Salvataggio sicuro delle immagini
+• Logging delle rilevazioni
+
+===============================================================================
+8. IMPOSTAZIONI
+===============================================================================
+
+ACCESSO: Menu laterale → "Impostazioni"
+
+FUNZIONI DISPONIBILI:
+┌─────────────────────────────────────────────────────────────┐
+│ IMPOSTAZIONI                                                │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  PROFILO UTENTE:                                            │
+│  ┌─────────────────────────────────────────────────────────┐ │
+│  │ Nome: [Mario Meccanico________________]                │ │
+│  │ Email: [mario.meccanico@officinasma.com]               │ │
+│  │ Ruolo: Meccanico                                        │ │
+│  │                                                         │ │
+│  │ [CAMBIA PASSWORD] [SALVA MODIFICHE]                    │ │
+│  └─────────────────────────────────────────────────────────┘ │
+│                                                             │
+│  NOTIFICHE:                                                 │
+│  ┌─────────────────────────────────────────────────────────┐ │
+│  │ ☑ Notifiche email per nuovi appuntamenti               │ │
+│  │ ☑ Notifiche push per clienti in arrivo                 │ │
+│  │ ☑ Notifiche per appuntamenti in ritardo                │ │
+│  │                                                         │ │
+│  │ [SALVA PREFERENZE]                                      │ │
+│  └─────────────────────────────────────────────────────────┘ │
+│                                                             │
+│  SISTEMA:                                                   │
+│  ┌─────────────────────────────────────────────────────────┐ │
+│  │ ☑ Modalità scura                                        │ │
+│  │ ☑ Aggiornamenti automatici                              │ │
+│  │ ☑ Backup automatico dati                                │ │
+│  │                                                         │ │
+│  │ [SALVA IMPOSTAZIONI]                                    │ │
+│  └─────────────────────────────────────────────────────────┘ │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+
+CAMBIO PASSWORD:
+1. Clicca su "CAMBIA PASSWORD"
+2. Inserisci la password attuale
+3. Inserisci la nuova password
+4. Conferma la nuova password
+5. Clicca "SALVA"
+
+MODIFICA PROFILO:
+1. Modifica i campi del profilo
+2. Clicca "SALVA MODIFICHE"
+
+GESTIONE NOTIFICHE:
+• Notifiche email: Ricevi email per nuovi appuntamenti
+• Notifiche push: Avvisi in tempo reale per clienti in arrivo
+• Notifiche ritardo: Avvisi per appuntamenti in ritardo
+
+IMPOSTAZIONI SISTEMA:
+• Modalità scura: Cambia il tema dell'interfaccia
+• Aggiornamenti automatici: Mantieni il sistema aggiornato
+• Backup automatico: Salvataggio automatico dei dati
+
+===============================================================================
+9. FUNZIONI AVANZATE
+===============================================================================
+
+RICERCA RAPIDA:
+- Usa la barra di ricerca in alto per trovare clienti, veicoli o appuntamenti
+- La ricerca funziona in tempo reale mentre digiti
+
+FILTRI AVANZATI:
+- Combina più filtri per trovare esattamente quello che cerchi
+- Salva i filtri preferiti per un uso futuro
+
+ESPORTAZIONE DATI:
+- Esporta liste di clienti, veicoli o appuntamenti in formato CSV
+- Stampa report dettagliati
+
+NOTIFICHE IN TEMPO REALE:
+- Ricevi notifiche quando un cliente con appuntamento arriva
+- Avvisi per appuntamenti in ritardo
+- Notifiche per nuovi appuntamenti
+
+BACKUP E SICUREZZA:
+- I dati vengono salvati automaticamente
+- Backup giornalieri del database
+- Accesso sicuro con autenticazione
+
+===============================================================================
+10. RISOLUZIONE PROBLEMI
+===============================================================================
+
+PROBLEMI COMUNI E SOLUZIONI:
+
+1. NON RIESCO AD ACCEDERE:
+   - Verifica che l'indirizzo sia corretto: http://localhost:3000
+   - Controlla le credenziali
+   - Prova a cancellare la cache del browser
+   - Contatta l'amministratore se il problema persiste
+
+2. LA PAGINA NON SI CARICA:
+   - Ricarica la pagina (F5)
+   - Controlla la connessione internet
+   - Prova un browser diverso
+   - Verifica che il server sia attivo
+
+3. NON VEDO GLI APPUNTAMENTI:
+   - Controlla i filtri applicati
+   - Verifica la data selezionata
+   - Prova a resettare i filtri
+   - Controlla che ci siano appuntamenti nel database
+
+4. IL LIVESTREAM NON FUNZIONA:
+   - Verifica l'URL dello stream
+   - Controlla la connessione di rete
+   - Prova con la webcam locale (URL: 0)
+   - Verifica le credenziali della telecamera
+
+5. NON RIESCO A SALVARE I DATI:
+   - Controlla che tutti i campi obbligatori siano compilati
+   - Verifica la connessione al database
+   - Prova a ricaricare la pagina
+   - Contatta l'amministratore
+
+6. PROBLEMI CON LE IMMAGINI:
+   - Verifica che le immagini non siano troppo grandi
+   - Controlla il formato (JPG, PNG)
+   - Prova a ricaricare l'immagine
+   - Verifica i permessi di scrittura
+
+CONTATTO SUPPORTO:
+- Email: support@officinasma.com
+- Telefono: +39 02 1234567
+- Orari: Lun-Ven 9:00-18:00
+
+===============================================================================
+11. GLOSSARIO
+===============================================================================
+
+TERMINI TECNICI:
+
+• APPUNTAMENTO: Prenotazione di un cliente per un servizio
+• CLIENTE: Persona che utilizza i servizi dell'officina
+• VEICOLO: Auto, moto o altro mezzo del cliente
+• SERVIZIO: Tipo di lavoro da eseguire (cambio olio, revisione, ecc.)
+• STATO: Condizione attuale di un appuntamento
+• TARGA: Numero identificativo del veicolo
+• LIVESTREAM: Trasmissione video in tempo reale
+• OCR: Riconoscimento ottico dei caratteri
+• BLUR: Effetto di sfocatura per proteggere la privacy
+
+STATI APPUNTAMENTO:
+• PROGRAMMATO: Appuntamento creato ma non confermato
+• CONFERMATO: Cliente ha confermato l'appuntamento
+• IN CORSO: Lavoro iniziato
+• COMPLETATO: Lavoro finito
+• CANCELLATO: Appuntamento annullato
+
+TIPI CARBURANTE:
+• Benzina
+• Diesel
+• Elettrico
+• Ibrido
+• GPL
+• Metano
+
+SERVIZI COMUNI:
+• Cambio olio
+• Revisione
+• Riparazione
+• Diagnosi
+• Pulizia
+• Manutenzione
+
+===============================================================================
+                                FINE MANUALE
+===============================================================================
+
+Per assistenza tecnica o domande:
+- Consulta questa guida
+- Contatta il supporto tecnico
+- Chiedi aiuto al tuo supervisore
+
+Ultimo aggiornamento: Agosto 2024
+Versione: 1.0

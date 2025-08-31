@@ -1,0 +1,314 @@
+/* Custom CSS for OfficinaSma Website */
+
+:root {
+  --primary-color: #1976d2;
+  --secondary-color: #dc004e;
+  --success-color: #2e7d32;
+  --warning-color: #ed6c02;
+  --info-color: #0288d1;
+  --dark-color: #1a1a1a;
+  --light-color: #f8f9fa;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+}
+
+.hero-image {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-image img {
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: translateY(-10px);
+}
+
+/* Feature Cards */
+.feature-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  border-color: var(--primary-color);
+}
+
+.feature-icon {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color), #1565c0);
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Pricing Card */
+.pricing-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  border-color: var(--primary-color);
+}
+
+.price-display {
+  margin: 20px 0;
+}
+
+.price-display .display-4 {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+/* Demo Section */
+.demo-screenshot img {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.demo-screenshot img:hover {
+  transform: scale(1.02);
+}
+
+.demo-features {
+  margin: 30px 0;
+}
+
+.demo-features .d-flex {
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.demo-features .d-flex:last-child {
+  border-bottom: none;
+}
+
+/* Contact Form */
+.contact-form .form-control {
+  border-radius: 10px;
+  border: 2px solid #e0e0e0;
+  padding: 12px 15px;
+  transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(25, 118, 210, 0.25);
+}
+
+.contact-form .btn {
+  border-radius: 10px;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Navigation */
+.navbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(25, 118, 210, 0.95) !important;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+
+/* Buttons */
+.btn {
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-lg {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+}
+
+/* Social Links */
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+    padding: 100px 0 50px;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .feature-card {
+    margin-bottom: 30px;
+  }
+  
+  .pricing-card {
+    margin: 20px 0;
+  }
+  
+  .demo-screenshot {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .btn-lg {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+  .pricing-card {
+    padding: 30px 20px !important;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading Animation */
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255,255,255,.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1565c0;
+}

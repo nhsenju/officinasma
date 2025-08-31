@@ -1,0 +1,28 @@
+Progetto Software: Smart Garage Dashboard
+
+Obiettivo:
+Creare una dashboard moderna e intuitiva per la gestione degli appuntamenti in officina meccanica. 
+Il sistema integra un calendario digitale, un modulo AI di riconoscimento targhe tramite telecamera 
+ethernet live-streaming e automazioni per notifiche ed emissione di fatture.
+
+Funzionalità principali:
+- Calendario appuntamenti con conferma automatica al cliente.
+- Check-in/checkout automatico tramite riconoscimento targa.
+- Invio email e SMS al cliente.
+- Generazione fatture PDF automatiche.
+- Dashboard moderna con KPI, calendario e streaming camera.
+- Analisi statistiche e predizione AI tempi medi.
+
+Architettura:
+- Frontend: React/Next.js
+- Backend: Python (FastAPI)
+- DB: PostgreSQL
+- AI: YOLOv8/ONNX
+- Email/SMS: SendGrid + Twilio
+
+Roadmap:
+1. Calendario + check-in/checkout
+2. Email e fatture
+3. Dashboard con KPI
+4. App mobile + pagamenti digitali
+5. Modulo AI predittivo
